@@ -1,0 +1,3 @@
+[workspace]
+members = ["car","controller"]
+resolver = "2"
