@@ -220,6 +220,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "either"
+version = "1.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a26ae43d7bcc3b814de94796a5e736d4029efb0ee900c12e2d54c993ad1a1e07"
+
+[[package]]
 name = "embassy-executor"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1218,6 +1224,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "rotary-encoder-hal"
+version = "0.5.0"
+source = "git+https://github.com/flyaruu/rotary-encoder-hal?rev=a11f4a2#a11f4a28da192919cad9f9ccabee78f5ec257577"
+dependencies = [
+ "either",
+ "embedded-hal 0.2.7",
+ "embedded-hal 1.0.0-rc.1",
+]
+
+[[package]]
 name = "rustc_version"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1279,6 +1295,7 @@ dependencies = [
  "heapless",
  "log",
  "protocol",
+ "rotary-encoder-hal",
  "static_cell",
 ]
 

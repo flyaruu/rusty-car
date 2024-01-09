@@ -8,4 +8,3 @@ edition = "2021"
 [dependencies]
 postcard = { version = "1.0.8", features = ["alloc", "postcard-derive"] }
 serde = { version = "1.0.195", default-features = false, features = ["alloc", "derive"] }
-
